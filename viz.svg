@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="461" viewBox="0 0 760 461" role="img" aria-label="Step-by-step visual walkthrough">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="context-stroke"/></marker></defs>
+<rect x="1.0" y="1.0" width="758.0" height="459.0" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" fill="#1e293b" text-anchor="start" font-weight="600">Clone with Random Pointers — interleave, wire, unzip</text>
+<circle cx="35.0" cy="74.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="78.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">1</text>
+<text x="56.0" y="79.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Each node also has a Random arrow to any node. Deep-copy everything without a map</text>
+<text x="56.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">from original to clone.</text>
+<rect x="24.0" y="128.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="51.0" y="151.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">1</text>
+<line x1="78.0" y1="146.0" x2="102.0" y2="146.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="108.0" y="128.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="135.0" y="151.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">2</text>
+<line x1="162.0" y1="146.0" x2="186.0" y2="146.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="192.0" y="128.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="219.0" y="151.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">3</text>
+<line x1="240.0" y1="146.0" x2="262.0" y2="146.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="274.0" y="151.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#64748b" text-anchor="middle">∅</text>
+<path d="M 51 126 Q 135 94 219 126" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="135.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#dc2626" text-anchor="middle">random</text>
+<path d="M 135 126 Q 93 94 51 126" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="93.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#dc2626" text-anchor="middle">random</text>
+<line x1="24.0" y1="178.0" x2="736.0" y2="178.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="198.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="202.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">2</text>
+<text x="56.0" y="203.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Pass 1: splice a copy right AFTER each original: 1,1',2,2',3,3'. Now 'the copy of X'</text>
+<text x="56.0" y="222.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">is always just X.Next — that positional fact replaces the hash map. Pass 2 wires</text>
+<text x="56.0" y="241.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">each copy's Random as original.Random.Next.</text>
+<rect x="24.0" y="257.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="51.0" y="280.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">1</text>
+<line x1="78.0" y1="275.0" x2="102.0" y2="275.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="108.0" y="257.0" width="54.0" height="36.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="135.0" y="280.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">1'</text>
+<line x1="162.0" y1="275.0" x2="186.0" y2="275.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="192.0" y="257.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="219.0" y="280.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">2</text>
+<line x1="246.0" y1="275.0" x2="270.0" y2="275.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="276.0" y="257.0" width="54.0" height="36.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="303.0" y="280.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">2'</text>
+<line x1="330.0" y1="275.0" x2="354.0" y2="275.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="360.0" y="257.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="387.0" y="280.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">3</text>
+<line x1="414.0" y1="275.0" x2="438.0" y2="275.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="444.0" y="257.0" width="54.0" height="36.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="471.0" y="280.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">3'</text>
+<line x1="492.0" y1="275.0" x2="514.0" y2="275.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="526.0" y="280.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#64748b" text-anchor="middle">∅</text>
+<line x1="24.0" y1="307.0" x2="736.0" y2="307.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="327.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="331.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">3</text>
+<text x="56.0" y="332.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Pass 3: unzip the two interleaved chains — originals restored exactly, clone handed</text>
+<text x="56.0" y="351.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">back with identical arrow topology.</text>
+<rect x="24.0" y="381.0" width="54.0" height="36.0" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="51.0" y="404.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">1'</text>
+<line x1="78.0" y1="399.0" x2="102.0" y2="399.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="108.0" y="381.0" width="54.0" height="36.0" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="135.0" y="404.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">2'</text>
+<line x1="162.0" y1="399.0" x2="186.0" y2="399.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="192.0" y="381.0" width="54.0" height="36.0" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="219.0" y="404.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">3'</text>
+<line x1="240.0" y1="399.0" x2="262.0" y2="399.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="274.0" y="404.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#64748b" text-anchor="middle">∅</text>
+<path d="M 51 379 Q 135 347 219 379" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="135.0" y="351.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#dc2626" text-anchor="middle">random</text>
+<path d="M 135 379 Q 93 347 51 379" fill="none" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="93.0" y="351.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#dc2626" text-anchor="middle">random</text>
+<text x="380.0" y="443.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">github.com/Sreenivas-Sadhu-Prabhakara · dsa series</text>
+</svg>
